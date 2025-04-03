@@ -1,6 +1,5 @@
 # 📰 CurrentPulse - Real-Time News Aggregator
-
-![Demo Screenshot](./screenshot.png) *(Add your screenshot file and replace this text)*
+ 
 
 A lightweight, responsive news aggregator that fetches and displays the latest headlines across multiple categories using NewsAPI. Built with pure HTML, CSS, and JavaScript.
 
