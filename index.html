@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrentPulse - Your News Stream</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Optional: Font Awesome for Icons -->
+    <!-- <script src="https://kit.fontawesome.com/your-fontawesome-kit-code.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">CurrentPulse 📰</h1>
+            <p class="tagline">Stay Ahead with the Latest Headlines</p>
+        </div>
+    </header>
+
+    <nav class="category-nav" aria-label="News Categories">
+        <div class="container">
+            <ul id="category-list">
+                <!-- Category buttons will be loaded here by JavaScript -->
+                <li><button class="category-button active-category" data-category="general">General</button></li>
+                </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2 id="current-category-title" class="section-title">General News</h2>
+            <div id="loading-indicator">
+                <div class="spinner"></div>
+                <p>Fetching fresh news...</p>
+            </div>
+            <div id="error-message" class="hidden">
+                <p>Oops! Couldn't fetch the news. Please check your connection or API key and try again later.</p>
+             </div>
+            <div id="news-grid" class="news-grid">
+                <!-- News articles will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year"></span> CurrentPulse. News data powered by <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">NewsAPI.org</a>.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
