@@ -208,15 +208,24 @@ main {
 .news-card .placeholder-image {
     width: 100%;
     aspect-ratio: 16 / 9;
-    object-fit: cover;
-    background-color: #e9ecef; /* Lighter placeholder */
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--light-text-color);
-    font-style: italic;
-    font-size: 0.9rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
     border-bottom: 1px solid var(--border-color);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.news-card .placeholder-image::before {
+    content: '📰';
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
 }
 
 .news-content {
